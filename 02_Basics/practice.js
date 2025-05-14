@@ -1,12 +1,12 @@
-const JsUser = { name: "Tushar" };
+const jsUser = { name: "Tushar" };
 
-JsUser = { name: "Another User" }; // This would throw an error
+jsUser = { name: "Another User" }; // This would throw an error
 
-console.log(JsUser["name"] = "TusharGupta");
+console.log(jsUser["name"] = "TusharGupta");
 
 
-Object.freeze(JsUser);
-JsUser.email = "newemail@domain.com"; // This will silently fail in non-strict mode
-Object.seal(JsUser);
-JsUser.email = "newemail@domain.com"; // This will work
-JsUser.city = "newcity";             // This will fail
+Object.freeze(jsUser);
+jsUser.email = "newemail@domain.com"; // This will silently fail in non-strict mode
+Object.seal(jsUser);
+jsUser.email = "newemail@domain.com"; // This will work
+jsUser.city = "newcity";             // This will fail

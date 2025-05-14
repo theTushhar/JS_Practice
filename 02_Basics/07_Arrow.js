@@ -12,7 +12,7 @@ const user = {
   },
 };
 
-// user.welcomeMessage() // 'this' points to 'user' object
+user.welcomeMessage(); // 'this' points to 'user' object
 // user.username = "sam" // Modifying property
 // user.welcomeMessage() // 'this' now shows updated username
 
@@ -46,7 +46,7 @@ const chai = () => {
 // 4. Returning an object requires parentheses
 const addTwo = (num1, num2) => ({ username: "tushar" });
 
-console.log(addTwo(3, 4)); // Returns the object { username: "tushar" }
+// console.log(addTwo(3, 4)); // Returns the object { username: "tushar" }
 
 // Array method example (commented out)
 // const myArray = [2, 5, 3, 7, 8]
